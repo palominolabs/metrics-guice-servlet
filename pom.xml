@@ -63,21 +63,6 @@
     <dependencies>
         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-core</artifactId>
-            <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-annotation</artifactId>
-            <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
-            <artifactId>metrics-healthchecks</artifactId>
-            <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-servlets</artifactId>
             <version>${metrics.version}</version>
         </dependency>
@@ -91,19 +76,15 @@
             <artifactId>jsr305</artifactId>
             <version>3.0.0</version>
         </dependency>
-        <!-- dependencies for Guice/Servlet integration -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
-            <optional>true</optional>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-servlet</artifactId>
             <version>${guice.version}</version>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
